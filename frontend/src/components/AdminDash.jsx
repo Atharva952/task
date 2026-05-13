@@ -27,14 +27,14 @@ function AdminDash() {
     }
   };
 
-  // Open Edit Dialog
+
   const openEditDialog = (item) => {
     setOpen(true);
     setEditId(item._id);
     setEditText(item.text);
   };
 
-  // Update Feedback
+
   const updateFeedback = async () => {
     try {
       await axios.put(
@@ -57,7 +57,7 @@ function AdminDash() {
     }
   };
 
-  // Delete Feedback
+
   const deleteFeedback = async (id) => {
     try {
       await axios.delete(
